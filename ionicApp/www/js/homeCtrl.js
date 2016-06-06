@@ -49,6 +49,7 @@ module.controller('HomeCtrl', function($scope,$http,$ionicPopup,ApiEndpoint,$htt
 		}).then(function successCallback(response) {
 			//console.log(newNumber.toString())
 			$scope.data.newNumber = ''
+			window.location.reload();
 		}, function errorCallback(response) {
 			console.log("ERROR")
 		});
