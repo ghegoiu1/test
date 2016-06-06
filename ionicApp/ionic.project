@@ -1,0 +1,11 @@
+
+{
+  "name": "SimpleConnectedProject",
+  "app_id": "projectConn",
+  "proxies": [
+    {
+      "path": "/api/",
+      "proxyUrl": "http://localhost:8000/showNumbers/api"
+    }
+  ]
+}

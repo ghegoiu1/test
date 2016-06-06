@@ -1,0 +1,35 @@
+<ion-view view-title="Home">
+  <ion-content>
+    <h2>{{header}}</h2> <!-- Setting header from homeCtrl.js file just for example sake-->
+    <div class="card">
+      <div class="item item-divider">
+        Tuples
+      </div>
+      <div class="item item-text-wrap">
+          <div ng-repeat="tuple in tuples" style="margin:4px;float:left;" class="list list-inset"> <!-- Loop through tuples, pulled from JS-->
+              <button class="button button-medium" ng-click="GetDetails(tuple)">  <!-- On button click execute GetDetails(tuple) -->
+                  <b>{{tuple.id}}</b>   <!-- What is written on the button -->
+              </button>
+          </div>
+          <div style="width:100%; !important">
+              <span > Click the index</span>
+          </div>
+      </div>
+    </div>
+    
+
+    <div>
+    
+      <label class="item item-input">
+        <span class="input-label">Number</span>
+        <input ng-model="data.newNumber">
+      </label>
+
+    <button class="button button-medium" ng-click="SendNumber()">
+      <b> Submit </b>
+    </button>
+    </div>
+    
+
+  </ion-content>
+</ion-view>
